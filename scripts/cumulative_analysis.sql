@@ -25,7 +25,7 @@ FROM
 (
     SELECT 
         DATETRUNC(year, order_date) AS order_date,
-        SUM(sales_amount) AS total_sales,
+        SUM(sales_amount) AS total_sales ,
         AVG(price) AS avg_price
     FROM gold.fact_sales
     WHERE order_date IS NOT NULL

@@ -182,13 +182,17 @@ Metrics include:
 
 ---
 
-# How to Run
+## How to Run
 
 1. Clone the repository.
-2. Open SQL Server Management Studio.
-3. Execute the database creation script.
-4. Run each SQL script inside the `scripts` folder.
-5. Query the report views:
+
+2. Open **SQL Server Management Studio (SSMS)**.
+
+3. Run the SQL scripts in the `scripts` folder .
+
+> **Note:** Before running `00_init_database.sql`, update the dataset directory path to match the location of the dataset on your system.
+
+4. Query the generated report views:
 
 ```sql
 SELECT *

@@ -16,7 +16,7 @@ SQL Functions Used:
 -- Analyse sales performance over time
 -- DATETRUNC()
 SELECT
-    DATETRUNC(month, order_date) AS order_date,
+    DATETRUNC(month, order_date) AS order_date ,
     SUM(sales_amount) AS total_sales,
     COUNT(DISTINCT customer_key) AS total_customers,
     SUM(quantity) AS total_quantity
